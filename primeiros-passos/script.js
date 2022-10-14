@@ -8,3 +8,9 @@ console.log('Olá, mundo!') //isto é uma função comando escreval em java scri
 //com crase você pode usar tanto as simples quanto as duplas e, inclusive utilizar template strings ${}
 
 console.log(`Olá! Meu nome é "Ithalo". Estou aprendendo Java Script às`, 15,'da tarde')
+
+/**
+ * 
+ * 
+ * 
+ */
