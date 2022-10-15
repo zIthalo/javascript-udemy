@@ -45,6 +45,11 @@ console.log(umastring.lastIndexOf('t', 5))
 
 lê-se: quero saber onde encontro uma letra t do índice 5 até o 0
 
+Você também pode encontrar o último índice de uma letra assim:
+
+console.log(umastring.lastIndexOf('t'))
+
+
 Se você quiser substituir uma palavra de um texto faça assim:
 console.log(umastring.replace('um', 'outro'))
 
