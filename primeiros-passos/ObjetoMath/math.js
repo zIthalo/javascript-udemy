@@ -1,4 +1,5 @@
 //Comando para arredondar um número para baixo função.método ↓
+
 // let n1 = 9.54281
 // let n2 = Math.floor(n1)
 // console.log(n2)
@@ -29,7 +30,6 @@
 
 //Fazendo potênciação com math
 //console.log(Math.pow(2,10))
-
 
 //lê-se: Faça a potência (Math.pow) de dois elevado a 10 (2,10)
 

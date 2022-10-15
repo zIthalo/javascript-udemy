@@ -30,7 +30,7 @@ console.log(n1)
 //O resultado será 0.9999999999999999
 
 
-//IEEE 74-2008 Um bagui estranho do JS
+//IEEE 74-2008 Um bagui estranho do JS aqui estou tentando fazer n1 chegar no valor de 1.0
 //era para ter
 n1 += n2 //0.8
 n1 += n2 //0.9
