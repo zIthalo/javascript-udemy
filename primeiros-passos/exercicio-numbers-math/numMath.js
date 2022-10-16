@@ -1,13 +1,26 @@
-let n1 = Number(prompt('Digite um número: '))
-let raizQ
-let inteiro
-let nan
-let arredondadoBaixo
-let arredondadoAlto
-let duasCasasDec
+const n1 = Number(prompt('Digite um número: '))
+const numeroTitulo = document.getElementById('numero-titulo')
+const texto = document.getElementById('texto')
+// const raizQ
+// const inteiro
+// const nan
+// const arredondadoBaixo
+// const arredondadoAlto
+// const duasCasasDec
 
-document.body.style = ('font-family:arial;')
-document.body.innerHTML +=(`<h1> Seu número é ${n1}</h1> </br>`)
-document.body.innerHTML +=(`A raíz quadrada de ${n1} é: ${n1 ** 0.5} </br>`)
-document.body.innerHTML += (`${n1} é inteiro: ${Math.isInteger(n1)} </br>`)
-document.body.innerHTML += (`É NaN: ${Number.isNaN(n1)}`)
+//document.body.style = ('font-family:arial;')
+
+numeroTitulo.innerHTML = n1
+
+texto.innerHTML = ' '
+
+texto.innerHTML +=` <p>A raíz quadrada de ${n1} é: ${n1 ** 0.5}</p> `
+
+texto.innerHTML += `<p>${n1} é inteiro: ${Math.isInteger(n1)}</p> `
+
+texto.innerHTML += `<p>É NaN: ${Number.isNaN(n1)}</p>`
+
+texto.innerHTML +=`<p>Este número arredondado para baixo fica: ${Math.floor(n1)}</p>`
+
+texto.innerHTML += `<p>Este número arredondado para cima fica ${Math.ceil(n1)}</p>`
+texto.innerHTML += `<p>Com duas casas decimais fica: ${n1.toFixed(2)}</p>`
