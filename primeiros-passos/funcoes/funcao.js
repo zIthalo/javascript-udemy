@@ -1,16 +1,38 @@
-//fazendo uma função que recebe 2 valores
-function soma(x, y){
-    const resultado = x + y// Esta constante com o nome resultado só é válida aqui dentro da function porque elea é de escopo local, isto quer dizer que eu posso criar fora daqui uma const com o mesmo nome recebendo o valor desta função para exibir os dados desta function
+//Também posso criar uma variável ou constante com uma função inteira dentro assim:
+
+const raiz = function(n) {
+    return n ** 0.5; //um número elevado a 0.5 é a sua propria raiz quadrada
+};
+
+console.log(raiz(9)) //Aqui eu estou pedindo para exibir na tela o resultado da raiz quadrada de 9
+console.log(25 ** 0.5)
+
+//Existe alguma forma de simplificar o código de função que possui somente uma linha e somente um parâmetro? Sim utilizando arrow function =>
 
 
-    return resultado //o que significa? Isso significa que a minha const resultado irá retornar a soma de x + y e este return resultado serve para que quando eu digitar o meu console.log(resultado) o valor que está dentro da minha variável seja exibido na tela.
-    //E mais uma coisa. Tudo que estiver abaixo de return em uma função será ignorado pois quando se coloca um return ele já indica que é somente para retornar valores que estão acima dele. A não ser que você utilize estruturas condicionais como eu utilizei em um código lá em baixo ↓↓
 
-}
-const resultado = soma(2,2)
-console.log(resultado) //isso significa que eu estou atribuíndo o valor de 2 para x e 2 para y na minha função soma
-console.log(soma(4,9))
-console.log(soma(3,9))
+
+
+
+
+
+// //fazendo uma função que recebe 2 valores
+// function soma(x = 1, y = 1){
+//     const resultado = x + y// Esta constante com o nome resultado só é válida aqui dentro da function porque elea é de escopo local, isto quer dizer que eu posso criar fora daqui uma const com o mesmo nome recebendo o valor desta função para exibir os dados desta function
+
+
+//     return resultado //o que significa? Isso significa que a minha const resultado irá retornar a soma de x + y e este return resultado serve para que quando eu digitar o meu console.log(resultado) o valor que está dentro da minha variável seja exibido na tela.
+//     //E mais uma coisa. Tudo que estiver abaixo de return em uma função será ignorado pois quando se coloca um return ele já indica que é somente para retornar valores que estão acima dele. A não ser que você utilize estruturas condicionais como eu utilizei em um código lá em baixo ↓↓
+
+// }
+// const resultado = soma(2,2) 
+// //isto significa que eu estou atribuíndo o valor de 2 para x e 2 para y na minha função soma
+// //Se eu colocasse assim resultado = soma() e eu mandasse exibir com console.log o meu valor iria retornar NaN, da mesma forma, se eu declarasse a const assim const resultado = soma(5) também iria me retornar um valor NaN, para que isto não aconteça eu aprendi a declarar um valor padrão lá em cima na função observe ↑↑. Agora se eu colocar const resultado = soma() irá  aparecer a soma dos dois valores que eu coloquei lá em cima, da mesma forma, se eu colocar const resultado = soma(5) eu estarei atribuindo somente o valor de x que irá ser somado com o valor de y padrão que é 1 e por fim, se eu declarar const resultado = soma(5, 3) quando eu pedir para exibir serão ignorados os valores parão de x e y e irá ser colocado os novos valores que são 5 + 3
+
+// console.log(resultado) 
+// console.log(soma(4,9))
+// console.log(soma(3,9))
+
 // Em JS os programas que mais vamos fazer serão funções que se comunicam entre si trocando informações, assim como uma calculadora que tem as divisões, somas, subtrações e multiplicações cada um tem sua função
 
 
