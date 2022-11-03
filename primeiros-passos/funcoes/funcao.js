@@ -1,14 +1,22 @@
+//Notas sobre funções: É melhor ter uma função para cada coisa específica do que ter uma função gigante que faça tudo. No caso de uma calculadora é bom ter uma função para a soma, outra para a subtração, outra para a multiplicação, etc.
+
 //Também posso criar uma variável ou constante com uma função inteira dentro assim:
 
-const raiz = function(n) {
-    return n ** 0.5; //um número elevado a 0.5 é a sua propria raiz quadrada
-};
+//código com arrow function (bem menor)
+const raiz = n => n ** 0.5 //um número elevado a 0.5 é a sua propria raiz quadrada
 
 console.log(raiz(9)) //Aqui eu estou pedindo para exibir na tela o resultado da raiz quadrada de 9
 console.log(25 ** 0.5)
 
-//Existe alguma forma de simplificar o código de função que possui somente uma linha e somente um parâmetro? Sim utilizando arrow function =>
+//Existe alguma forma de simplificar o código de função que possui somente uma linha e somente um parâmetro? Sim, utilizando arrow function => ↑↑↑
 
+//código sem arrow function
+//const raiz = function(n) {
+//     return n ** 0.5; //um número elevado a 0.5 é a sua propria raiz quadrada
+// };
+
+// console.log(raiz(9)) //Aqui eu estou pedindo para exibir na tela o resultado da raiz quadrada de 9
+// console.log(25 ** 0.5)
 
 
 
