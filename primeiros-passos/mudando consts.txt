@@ -30,3 +30,57 @@ Isso NÃO pode
 
 const array = [1, 2, 3, 4, 5];
 array = 'Legal'; // Assignment to constant variable.
+
+Veja agora alguns exemplos de situações em que os valores são copiados e quando os valores apontarão para um espaço na memória:
+
+let n1 = 10
+let n2 = n1
+
+n1 = 15
+
+console.log(n1, n2) //neste caso aqui será impresso o novo valor de n1 e o antigo valor de n1 na variável n2, quando declaramos assim os valores de uma variável são copiados para as outras e armazenados lá mesmo que você mude o valor da var.
+
+E quando é que o valor é por referência, ou seja, quando ele aponta para um lugar na memória.
+
+//Assim é feita a declaração
+
+let a = [1,2,3]
+let b = a 
+let c = b
+
+a.push(4) 
+
+console.log(a, b) //saída [1,2,3,4] [1,2,3,4] //neste caso aqui o b também irá mudar pois ele e o a apontam para o mesmo espaço na memória do pc, ou seja neste caso aqui o b não copiou o valor de a mas agora tudo o que for a será b (mas tem um jeito de fazer o b copiar o valor de a que veremos mais adiante)
+
+b.pop(); 
+
+console.log(a, b) //saída [1,2,3] [1,2,3]
+
+//para fazer o valor de b copiar o que tinnha em a eu terei que usar isto let b = [...a] assim é que eu copio o valor de a vejamos co,o fica o meu código agora
+
+let a = [1,2,3,4]
+let b = [...a] //Esta técnica se chama spread
+let c = b
+
+console.log(a, b, c) //saída [1,2,3,4] [1,2,3,4] [1,2,3,4]
+
+a.push(5)
+
+console.log(a, b, c) //saída [1,2,3,4,5] [1,2,3,4] [1,2,3,4]
+
+b.pop()
+
+console.log(a,b,c) //saída [1,2,3,4,5] [1,2,3] [1,2,3]
+
+//tendeu?
+
+E isto acima também funciona para objetos também fazendo um spread
+
+const a ={
+    nome: 'Ithalo'
+    sobrenome = 'Willian'
+}
+const b = {...a}
+a.nome = 'Íthalo'
+
+console.log(b)//Saída nome: 'Ithalo', sobrenome: 'Willian'

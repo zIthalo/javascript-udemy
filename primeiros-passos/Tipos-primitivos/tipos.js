@@ -15,7 +15,7 @@ const b = a
 console.log(b, a)
 
 //(--var pré decremento var-- pós decremento)
- // Para passar uma string que estiver assim por exemplo: '5.2', para número eu tenho 3 opções mas a 3º é a melhor 1º parseInt('5.2') neste caso quando se tornasse número só iria pegar o 5 pois eu passei para inteiro, 2º parseFloat('5.2') neste caso pegaria o número completo 3º esta é a melhor Number('5.2') neste caso o JS vai reconhecer se é int ou float
+ // Para passar uma string que estiver assim por exemplo: '5.2', para número eu tenho 3 opções mas a 3º é a melhor. 1º parseInt('5.2') neste caso quando se tornasse número só iria pegar o 5 pois eu passei para inteiro, 2º parseFloat('5.2') neste caso pegaria o número completo, 3º, esta é a melhor, Number('5.2') neste caso o JS vai reconhecer se é int ou float
 
  /**
   * Sempre que colocarmos um parêntesis estamos chamando uma função ex alert(), confirm(), prompt() 
